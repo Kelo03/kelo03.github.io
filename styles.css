@@ -1,0 +1,103 @@
+body {
+  background-color: #8992a3fa;                /*#24282f*/
+  font-family: sans-serif;
+  margin: 0;
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+p {
+  font-family: "Segoe UI";
+  font-size: large;
+  color: #000000fa;
+}
+
+.itemprimergrafico > circle { grid-column-start: 1; grid-column-end:2;
+  fill: none;
+  stroke: rgb(56,240,179);
+  stroke-width:15;
+  stroke-dasharray: 100 100;
+  transform: rotate(-90deg);
+  transform-origin: 50%;
+   animation-name: PrimerGrafico;
+   animation-duration: 1s;
+}
+
+@keyframes PrimerGrafico {
+    0% {stroke-dasharray: 0 100;}
+    10% {stroke-dasharray: 10 100;}
+    20% {stroke-dasharray: 20 100;}
+    30% {stroke-dasharray: 30 100;}
+    40%  {stroke-dasharray: 40 100;}
+    50% {stroke-dasharray: 50 100;}
+    60% {stroke-dasharray: 60 100;}
+    70% {stroke-dasharray: 70 100;}
+    80% {stroke-dasharray: 80 100;}
+    90% {stroke-dasharray: 90 100;}
+    100%  {stroke-dasharray: 100 100;}
+    }
+
+.itemsegundografico >  circle { grid-column-start: 2; grid-column-end:3;
+  fill: none;
+  stroke: rgb(56,240,179);
+  stroke-width:15;
+  stroke-dasharray: 50 100;
+  transform: rotate(-90deg);
+  transform-origin: 50%;
+  animation-name: SegundoGrafico;
+  animation-duration:  1s;
+
+}
+
+@keyframes SegundoGrafico {
+    0% {stroke-dasharray: 0 100;}
+    10% {stroke-dasharray: 5 100;}
+    20% {stroke-dasharray: 10 100;}
+    30% {stroke-dasharray: 15 100;}
+    40%  {stroke-dasharray: 20 100;}
+    50% {stroke-dasharray: 25 100;}
+    60% {stroke-dasharray: 30 100;}
+    70% {stroke-dasharray: 35 100;}
+    80% {stroke-dasharray: 40 100;}
+    90% {stroke-dasharray: 45 100;}
+    100%  {stroke-dasharray: 50 100;}
+    }
+
+.itemtercergrafico >  circle { grid-column-start: 3; grid-column-end:4;
+  fill: none;
+  stroke: rgb(56,240,179);
+  stroke-width:15;
+  stroke-dasharray: 75 100;
+  transform: rotate(-90deg);
+  transform-origin: 50%;
+    animation-name: TercerGrafico;
+    animation-duration: 1s;
+
+}
+
+@keyframes TercerGrafico {
+    0% {stroke-dasharray: 0 100;}
+    10% {stroke-dasharray: 7.5 100;}
+    20% {stroke-dasharray: 15 100;}
+    30% {stroke-dasharray: 22.5 100;}
+    40%  {stroke-dasharray: 30 100;}
+    50% {stroke-dasharray: 37.5 100;}
+    60% {stroke-dasharray: 45 100;}
+    70% {stroke-dasharray: 52.5 100;}
+    80% {stroke-dasharray: 60 100;}
+    90% {stroke-dasharray: 67.5 100;}
+    100%  {stroke-dasharray: 75 100;}
+    }
+
+footer {
+  background-color: #8992a3fa;
+  border: 3px outset rgb(64, 70, 102);}
+
+
+footer > h1 {
+  font-family: Arial;
+  font-family: serif; 
+  text-align: center;
+  color: green;}
